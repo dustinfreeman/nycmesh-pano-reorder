@@ -1,7 +1,29 @@
-Welcome to Ye Webpage
+<body>
+<h2>Reordering panos...</h2>
 
-<img src="https://raw.githubusercontent.com/nycmeshnet/node-db/refs/heads/master/data/panoramas/ 11934.jpg"></img>
+<!-- <img src="https://raw.githubusercontent.com/nycmeshnet/node-db/refs/heads/master/data/panoramas/ 11934.jpg"></img> -->
 
-No space:
-<img src="https://raw.githubusercontent.com/nycmeshnet/node-db/refs/heads/master/data/panoramas/11934.jpg"></img>
 
+<script>
+    console.log('hello world');
+
+    //pano/node list
+    let rooftopsReordered = 
+    [
+        ['231', '231b', '231c', '231a'],
+        ['15480a','15480','15480c','15480b']
+    ];   
+
+    let rootPanoURL = 'https://raw.githubusercontent.com/nycmeshnet/node-db/refs/heads/master/data/panoramas/'
+
+    rooftopsReordered.forEach(rooftop => {
+        rooftop.forEach(pano => {
+            let imgElement = document.createElement("img");
+            imgElement.setAttribute('src', rootPanoURL + pano + '.jpg')
+            imgElement.setAttribute('width','25%')
+            document.body.appendChild(imgElement);
+        });
+    });
+
+</script>
+</body>
