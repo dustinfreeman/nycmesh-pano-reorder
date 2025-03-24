@@ -1,4 +1,5 @@
-# nycmesh-pano-reorder
-Experiments in reordering panos for NYCMesh
+# Experiments in reorganizing NYCMesh's rooftop photos for greater coherence 
 
-Behold: https://dustinfreeman.github.io/nycmesh-pano-reorder/
+https://www.nycmesh.net/
+
+Test Examples: https://dustinfreeman.github.io/nycmesh-pano-reorder/
